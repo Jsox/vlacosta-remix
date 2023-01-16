@@ -1,5 +1,18 @@
 export const dataFooter = [
     {
+        title: 'Фотосессии',
+        links: [
+            {
+                label: 'Свадебные',
+                link: '/wedding',
+            },
+            {
+                label: 'About us 2',
+                link: '/about2',
+            },
+        ],
+    },
+    {
         title: 'About',
         links: [
             {
