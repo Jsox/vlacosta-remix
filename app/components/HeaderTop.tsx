@@ -100,7 +100,7 @@ export function HeaderTop({ opened, toggle, mainLinks, userLinks }: DoubleHeader
         <Header height={HEADER_HEIGHT} mb={120}>
             <Container className={classes.inner}>
                 {/* <MantineLogo size={34} /> */}
-                <div>Logo</div>
+                <div>Logo1</div>
                 <div className={classes.links}>
                     <Group position="right">{secondaryItems}</Group>
                     <Group spacing={0} position="right" className={classes.mainLinks}>
