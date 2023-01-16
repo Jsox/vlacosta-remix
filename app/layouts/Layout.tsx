@@ -2,41 +2,9 @@ import { AppShell, Navbar, Aside, Text, MediaQuery, useMantineTheme } from '@man
 import { FooterLinks } from '~/components/FooterLinks';
 import { HeaderTop } from '~/components/HeaderTop';
 import { useDisclosure } from '@mantine/hooks';
+import { dataFooter, headerTopLinks } from './../data/links';
 
-const dataFooter = [
-    {
-        title: 'About',
-        links: [
-            {
-                label: 'About us',
-                link: '/about',
-            },
-            {
-                label: 'About us 2',
-                link: '/about2',
-            },
-        ],
-    },
-];
 
-const headerTopLinks = {
-    userLinks: [
-        {
-            label: 'first',
-            link: '/first',
-        },
-    ],
-    mainLinks: [
-        {
-            label: 'Main page',
-            link: '/',
-        },
-        {
-            label: 'About us',
-            link: '/about',
-        },
-    ],
-};
 export default function AppShellDemo(props: any) {
     const theme = useMantineTheme();
 
