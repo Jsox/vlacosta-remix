@@ -1,4 +1,4 @@
-export const dataFooter = [
+export const dataFooterLinks = [
     {
         title: 'Фотосессии',
         links: [

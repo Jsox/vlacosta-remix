@@ -2,8 +2,7 @@ import { AppShell, Navbar, Aside, Text, MediaQuery, useMantineTheme } from '@man
 import { FooterLinks } from '~/components/FooterLinks';
 import { HeaderTop } from '~/components/HeaderTop';
 import { useDisclosure } from '@mantine/hooks';
-import { dataFooter, headerTopLinks } from './../data/links';
-
+import { dataFooterLinks, headerTopLinks } from './../data/links';
 
 export default function AppShellDemo(props: any) {
     const theme = useMantineTheme();
@@ -30,7 +29,7 @@ export default function AppShellDemo(props: any) {
                     </Aside>
                 </MediaQuery>
             }
-            footer={<FooterLinks data={dataFooter} />}
+            footer={<FooterLinks data={dataFooterLinks} />}
             header={<HeaderTop toggle={toggle} opened={opened} {...headerTopLinks} />}
         >
             {props.children}
