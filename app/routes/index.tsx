@@ -1,6 +1,7 @@
 import { Text, Button, Stack, Title, TypographyStylesProvider, Mark, Blockquote, Tooltip } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
 import { useLoaderData } from '@remix-run/react';
+import YouTubeEmbed from '~/components/YouTubeEmbed';
 import Layout from '../layouts/Layout';
 import Api from '../lib/api.server';
 
@@ -13,6 +14,7 @@ export default function Index() {
     return (
         <Layout>
             <Stack align="center" my={50}>
+                {/* <YouTubeEmbed url="https://www.youtube.com/watch?v=2M8bSlVoT3I" /> */}
                 <Title order={3}>
                     Title in which you want to{' '}
                     <Text span c="teal.4" td={'line-through'} inherit>

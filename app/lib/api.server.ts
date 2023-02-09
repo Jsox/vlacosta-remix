@@ -1,10 +1,11 @@
 // import * as dotenv from 'dotenv';
 // dotenv.config();
 class api {
-    constructor() {}
+    // constructor() {}
 
-    pe() {
-        return 2;
+    pe(): number {
+        let a: number = 2;
+        return a;
     }
 }
 

@@ -40,6 +40,20 @@ export const headerTopLinks = {
             link: '/',
         },
         {
+            label: 'More',
+            link: '/more',
+            links: [
+                {
+                    label: 'About us',
+                    link: '/about1',
+                },
+                {
+                    label: 'About us',
+                    link: '/about2',
+                },
+            ],
+        },
+        {
             label: 'About us',
             link: '/about',
         },
