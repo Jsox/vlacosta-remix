@@ -19,7 +19,7 @@ const HEADER_HEIGHT = 60;
 
 const useStyles = createStyles((theme) => ({
     header: {
-        background: theme.colorScheme === 'dark' ? theme.colors.darkBlue[8] : theme.colors.darkBlue[0],
+        background: theme.colorScheme === 'dark' ? theme.colors.darkBlue[8] : theme.colors.darkBlue[2],
     },
     inner: {
         height: HEADER_HEIGHT,
@@ -46,7 +46,7 @@ const useStyles = createStyles((theme) => ({
         padding: '8px 12px',
         borderRadius: theme.radius.sm,
         textDecoration: 'none',
-        color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
+        color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[0],
         fontSize: theme.fontSizes.sm,
         fontWeight: 500,
 
@@ -110,7 +110,7 @@ export function HeaderAction({ links, opened, toggle }: HeaderActionProps) {
                     {items}
                 </Group>
                 <Group spacing={4}>
-                    <Button radius="xl" sx={{ height: 30 }}>
+                    <Button radius="xs" sx={{ height: 30 }}>
                         Get early access
                     </Button>
                     {/* <SegmentedToggle /> */}

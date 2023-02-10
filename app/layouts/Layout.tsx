@@ -1,19 +1,17 @@
-import { AppShell, Aside, Text, MediaQuery, useMantineTheme } from '@mantine/core';
+import { AppShell, Aside, Text, MediaQuery } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { NavbarSearch } from './../components/NavbarSearch/NavbarSearch';
 import { HeaderAction } from './../components/HeaderAction/HeaderAction';
 import { headerTopLinks } from '../data/links';
+import { useColors } from '../hooks/useColors';
 
 export default function AppShellDemo(props: any) {
-    const theme = useMantineTheme();
-
+    const { bodyStyles } = useColors();
     const [opened, { toggle }] = useDisclosure(false);
     return (
         <AppShell
             styles={{
-                main: {
-                    background: theme.colorScheme === 'dark' ? theme.colors.darkBlue[7] : theme.colors.gray[0],
-                },
+                main: { ...bodyStyles },
             }}
             navbarOffsetBreakpoint="sm"
             asideOffsetBreakpoint="lg"

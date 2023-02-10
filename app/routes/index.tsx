@@ -1,12 +1,13 @@
 import { Text, Button, Stack, Title, TypographyStylesProvider, Mark, Blockquote, Tooltip } from '@mantine/core';
 import { showNotification } from '@mantine/notifications';
 import { useLoaderData } from '@remix-run/react';
-import YouTubeEmbed from '~/components/YouTubeEmbed';
+import { useColors } from '../hooks/useColors';
+// import YouTubeEmbed from '~/components/YouTubeEmbed';
 import Layout from '../layouts/Layout';
-import Api from '../lib/api.server';
+import { fde } from '../lib/api.server';
 
 export async function loader() {
-    return { data: Api.pe() };
+    return { data: fde };
 }
 
 export default function Index() {

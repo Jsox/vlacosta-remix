@@ -1,6 +1,6 @@
-// import * as dotenv from 'dotenv';
-// dotenv.config();
-class api {
+import * as dotenv from 'dotenv';
+dotenv.config();
+export class api {
     // constructor() {}
 
     pe(): number {
@@ -10,4 +10,4 @@ class api {
 }
 
 const Api = new api();
-export default Api;
+export const fde = process.env.API_ADDRESS;

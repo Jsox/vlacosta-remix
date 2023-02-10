@@ -28,7 +28,7 @@ export const theme: MantineThemeOverride = {
             '#010F1C',
             '#010B15',
         ],
-        brightPink: [
+        primary: [
             '#F0BBDD',
             '#ED9BCF',
             '#EC7CC3',

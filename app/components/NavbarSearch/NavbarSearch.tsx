@@ -11,12 +11,13 @@ import {
     Tooltip,
 } from '@mantine/core';
 import { IconBulb, IconUser, IconCheckbox, IconSearch, IconPlus, IconSelector } from '@tabler/icons';
+import type { NavbarSearchProps } from '~/types';
 import { UserButton } from '../UserButton/UserButton';
 
 const useStyles = createStyles((theme) => ({
     navbar: {
         paddingTop: 0,
-        background: theme.colorScheme === 'dark' ? theme.colors.darkBlue[8] : theme.colors.gray[0],
+        background: theme.colorScheme === 'dark' ? theme.colors.darkBlue[7] : theme.colors.gray[0],
         // width: { sm: 200, lg: 300 },
     },
 
@@ -26,7 +27,7 @@ const useStyles = createStyles((theme) => ({
         marginBottom: theme.spacing.md,
 
         '&:not(:last-of-type)': {
-            borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]}`,
+            borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.darkBlue[6] : theme.colors.gray[1]}`,
         },
     },
 
@@ -124,7 +125,7 @@ const collections = [
     { emoji: '💁‍♀️', label: 'Customers' },
 ];
 
-export function NavbarSearch(props) {
+export function NavbarSearch(props: NavbarSearchProps) {
     const { opened, toggle } = props;
     const { classes } = useStyles();
 
@@ -155,14 +156,14 @@ export function NavbarSearch(props) {
 
     return (
         <Navbar hidden={!opened} height={700} width={{ sm: 300 }} p="md" className={classes.navbar}>
-            <Navbar.Section className={classes.section}>
+            {/* <Navbar.Section className={classes.section}>
                 <UserButton
                     image="https://i.imgur.com/fGxgcDF.png"
                     name="Bob Rulebreaker"
                     email="Product owner"
                     icon={<IconSelector size={14} stroke={1.5} />}
                 />
-            </Navbar.Section>
+            </Navbar.Section> */}
 
             <TextInput
                 placeholder="Поиск"
